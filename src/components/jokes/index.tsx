@@ -109,7 +109,7 @@ const Jokes: React.FC = () => {
     };
 
 
-    const transitionClass = !loading ? "translate-y-[20px]" : "";
+    // const transitionClass = !loading ? "translate-y-[20px]" : "";
 
     return (
         <div className="flex flex-col items-center w-full px-4 sm:px-6 md:px-8 py-8">

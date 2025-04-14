@@ -1,6 +1,6 @@
-import { NextApiRequest} from "next";
+
 import axios from "axios";
-import { NextResponse } from "next/server";
+import { NextResponse, NextRequest} from "next/server";
 
 interface ParamsTypes {
     category?: string;
@@ -17,7 +17,7 @@ function getQueryParams(searchParams: URLSearchParams, key: string, defaultValue
     return searchParams.get(key) || defaultValue;
 }
 
-export async function GET(req: NextApiRequest) {
+export async function GET(req: NextRequest) {
     if (!req.url) {
         return NextResponse.json({ error: "Invalid Request" }, { status: 404 });
     }

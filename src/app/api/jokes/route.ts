@@ -33,8 +33,7 @@ export async function GET(req: NextApiRequest) {
     console.log(params.category);
 
     const apiUrl = `https://v2.jokeapi.dev/joke/${params.category}?blacklistFlags=${params.flags}&type=${params.joketype}&amount=${params.amount}`;
-    // console.log(apiUrl);
-
+    console.log(apiUrl);
     try {
         const response = await axios.get(apiUrl);
         // console.log("Fetched Data:", response.data);

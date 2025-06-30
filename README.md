@@ -16,8 +16,6 @@ Effortless humor at one click – powered by [JokeAPI](https://v2.jokeapi.dev/jo
 
 ---
 
-## 📸 Screenshots & Functionality
-
 ### 🎯 Main Interface – Instant Joke Generator
 
 
